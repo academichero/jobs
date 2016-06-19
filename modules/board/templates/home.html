@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <div class="board-header">
+    <header>
+      <h2 class="board-header-title">Útilmas oportunidades cadastradas</h2>
+    </header>
+  </div>
+  <ul class="board-list">
+    {% for job in jobs %}
+      <li class="job-item {{job.featured|yesno:'featured,'}}">
+        <span class="title">{{job.title}}</span>
+        <p>{{job.description|truncatechars:140}}</p>
+        <span class="price">R$ {{job.salary_min}} à R$ {{job.salary_max}}</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

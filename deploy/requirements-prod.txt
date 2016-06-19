@@ -1,0 +1,16 @@
+appnope==0.1.0
+backports.shutil-get-terminal-size==1.0.0
+coverage==4.1
+decorator==4.0.10
+Django==1.9.7
+django-pipeline==1.6.8
+gnureadline==6.3.3
+ipython==4.2.0
+ipython-genutils==0.1.0
+model-mommy==1.2.6
+pexpect==4.1.0
+pickleshare==0.7.2
+ptyprocess==0.5.1
+simplegeneric==0.8.1
+six==1.10.0
+traitlets==4.2.1

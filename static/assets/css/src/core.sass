@@ -1,0 +1,68 @@
+.home-menu
+  padding: 0.5em
+  text-align: center
+  box-shadow: 0 1px 1px rgba(0,0,0, 0.10)
+  background: #2d3e50
+
+  .pure-menu-heading
+    color: white
+    font-weight: 400
+    font-size: 120%
+
+  .pure-menu-selected a
+    color: white !important
+  a
+    color: #6FBEF3
+
+  li a:hover,
+  .home-menu li a:focus
+    background: none
+    border: none
+    color: #AECFE5
+
+.pure-menu
+  .pure-menu-fixed
+    border-bottom: none
+    z-index: 4
+
+.page-content
+  margin-top: 60px
+  padding: 10px
+
+.board-list
+  display: block
+  padding: 0
+  margin: 0
+
+.job-item
+  border-left: 5px solid #eee
+  display: block
+  padding: 10px
+  margin-bottom: 10px
+
+
+.job-item .title
+  font-weight: 600
+
+.job-item.featured
+  border-left: 5px solid #1f8dd6
+  display: block
+  padding: 10px
+
+
+@media (min-width: 48em)
+  body
+    font-size: 16px
+
+  .content
+    padding: 1em
+
+  .home-menu
+    text-align: left
+
+  .home-menu ul
+    float: right
+
+  .page-content
+    width: 80%
+    margin: 60px auto auto
