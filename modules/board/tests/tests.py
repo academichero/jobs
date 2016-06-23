@@ -17,6 +17,9 @@ class HomeTest(TestCase):
     def test_home_response_200(self):
         self.assertEqual(self.response_home.status_code, 200)
 
+    def test_home_context_with_one_job(self):
+        self.assertEqual(len(self.response_home.context['jobs']), 1)
+
 
 class JobTest(TestCase):
     '''

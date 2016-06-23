@@ -1,0 +1,12 @@
+language: python
+python:
+  - 3.5
+install:
+  - pip install -r deploy/requirements-dev.txt
+  - pip install coveralls
+script:
+  - cp -r app/settings.sample.py app/settings.py
+  - mkdir deploy/static && mkdir deploy/static/assets && mkdir deploy/static/assets/css && touch deploy/static/assets/css/main.css
+  - coverage run manage.py test modules
+after_success:
+  coveralls
